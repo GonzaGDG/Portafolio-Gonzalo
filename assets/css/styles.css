@@ -623,6 +623,9 @@
       font-size: 1.5rem;
       padding: 0.3rem 0.5rem;
     }
+    .carousel-track {
+      margin: 0 -1rem;
+    }
   }
   
 
