@@ -618,7 +618,7 @@
     right: 10px;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 860px) {
     .carousel-btn {
       font-size: 1.5rem;
       padding: 0.3rem 0.5rem;
