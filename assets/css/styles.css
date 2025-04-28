@@ -626,6 +626,10 @@
     .carousel-track {
       margin: 0 -1rem;
     }
+    .carousel {
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+      border-radius: 10px;
+    }
   }
   
 
