@@ -645,6 +645,28 @@
       padding: 0.4rem 0.8rem;
     }
   }
+
+  .gem-pdf-button {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .gem-pdf-button a {
+    display: inline-block;
+    background-color: #007f8b;
+    color: #ffffff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 0.95rem;
+  }
+  
+  .gem-pdf-button a:hover {
+    background-color: #ff6f61;
+  }
+  
   
 
  
