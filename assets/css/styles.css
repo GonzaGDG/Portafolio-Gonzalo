@@ -624,12 +624,11 @@
       padding: 0.3rem 0.5rem;
     }
     .carousel-track {
-      margin: 0; 
+      margin: 0;
     }
     .carousel {
-      width: calc(100% + 4rem); /* Compensa el padding de la .container */
-      margin-left: -1rem; 
-      margin-right: -1rem;
+      width: 100%; /* No más calc ni margen negativo */
+      margin: 0 auto; /* Centrado automático */
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
       border-radius: 10px;
     }
