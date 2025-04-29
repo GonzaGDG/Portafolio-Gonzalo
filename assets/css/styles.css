@@ -618,7 +618,7 @@
     right: 10px;
   }
   
-  @media (max-width: 860px) {
+  @media (max-width: 768px) {
     .carousel-btn {
       font-size: 1.5rem;
       padding: 0.3rem 0.5rem;
@@ -627,7 +627,7 @@
       margin: 0; 
     }
     .carousel {
-      width: calc(100% + 4rem); /* Compensa el padding de la .container */
+      width: calc(120% + 2rem); /* Compensa el padding de la .container */
       margin-left: -1rem; 
       margin-right: -1rem;
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
