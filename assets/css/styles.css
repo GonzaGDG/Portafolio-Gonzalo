@@ -618,19 +618,31 @@
     right: 10px;
   }
   
-  @media (max-width: 768px) {
-    .carousel-btn {
-      font-size: 1.5rem;
-      padding: 0.3rem 0.5rem;
-    }
-    .carousel-track {
-      margin: 0;
-    }
+  @media (max-width: 1024px) { /* Abarcamos tablets y móviles */
     .carousel {
-      width: 100%; /* No más calc ni margen negativo */
-      margin: 0 auto; /* Centrado automático */
+      width: calc(100% + 2rem); /* Se expande 2rem más allá del container */
+      margin-left: -1rem;
+      margin-right: -1rem;
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
       border-radius: 10px;
+    }
+  
+    .carousel-btn {
+      font-size: 1.8rem;
+      padding: 0.3rem 0.6rem;
+    }
+  }
+  
+  @media (max-width: 600px) { /* Para celulares más chicos */
+    .carousel {
+      width: calc(100% + 3rem); /* Un poquito más ancho en móviles pequeños */
+      margin-left: -1.5rem;
+      margin-right: -1.5rem;
+    }
+  
+    .carousel-btn {
+      font-size: 2rem;
+      padding: 0.4rem 0.8rem;
     }
   }
   
