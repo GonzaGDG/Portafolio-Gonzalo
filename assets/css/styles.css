@@ -627,7 +627,7 @@
       margin: 0; 
     }
     .carousel {
-      width: calc(100% + 6rem); /* Compensa el padding de la .container */
+      width: calc(100% + 2rem); /* Compensa el padding de la .container */
       margin-left: -1rem; 
       margin-right: -1rem;
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
