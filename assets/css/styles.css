@@ -180,7 +180,7 @@
     position: relative;
     text-align: center;
     padding: 6rem 2rem;
-    min-height: 70vh;
+    min-height: 50vh;
   }
 
   .hero-bg::before {
