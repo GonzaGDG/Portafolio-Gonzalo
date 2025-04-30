@@ -331,7 +331,7 @@
     }
 
     .hero-bg {
-      min-height: 100vh; /* Deja visible la imagen completa */
+      min-height: 80vh; /* Deja visible la imagen completa */
     }
     
     .hero-bg::before {
