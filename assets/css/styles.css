@@ -334,7 +334,7 @@
     }
 
     .hero-bg::before {
-      background-color: rgba(0, 0, 0, 0.3); /* Más transparente en mobile */
+      filter: brightness(0.8); /* Más transparente en mobile */
     }
   }
   .contact-intro {
