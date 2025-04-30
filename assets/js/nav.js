@@ -111,6 +111,32 @@ track.addEventListener('touchend', () => {
   isDragging = false;
 });
 
+// Función para detectar si un elemento está en el viewport
+function isInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+  );
+}
+
+// Aplica animaciones al hacer scroll
+function handleScrollAnimations() {
+  const elements = document.querySelectorAll('.animate');
+  elements.forEach((el) => {
+    if (isInViewport(el)) {
+      el.classList.add('visible');
+    }
+  });
+
+  const cta = document.querySelector('.hero-cta');
+  if (cta && isInViewport(cta)) {
+    cta.classList.add('visible');
+  }
+}
+
+window.addEventListener('scroll', handleScrollAnimations);
+window.addEventListener('load', handleScrollAnimations);
+
 function desktopParallax() {
   const heroImage = document.querySelector('.hero-image');
   if (!heroImage || window.innerWidth < 768) return;
@@ -122,3 +148,5 @@ function desktopParallax() {
 }
 
 document.addEventListener('DOMContentLoaded', desktopParallax);
+
+
