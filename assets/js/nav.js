@@ -117,7 +117,7 @@ function desktopParallax() {
 
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
-    heroImage.style.transform = `translateY(${scrollY * 0.3}px)`; // Ajusta intensidad aquí
+    heroImage.style.transform = `translateY(${scrollY * 0.3}px)`;
   });
 }
 
