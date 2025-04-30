@@ -329,6 +329,10 @@
     .hero-text {
       font-size: 1rem;
     }
+
+    .hero-bg {
+      min-height: 100vh; /* Deja visible la imagen completa */
+    }
     
     .hero-bg::before {
       filter: brightness(0.7); /* Más transparente en mobile */
