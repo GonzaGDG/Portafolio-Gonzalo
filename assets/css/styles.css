@@ -174,7 +174,8 @@
   
   .hero-bg {
     background: url("../img/hero-background.png") center center / cover no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;    
+    background-position: center bottom;
     color: #fff;
     position: relative;
     text-align: center;
@@ -324,6 +325,10 @@
   
     .hero-text {
       font-size: 1rem;
+    }
+
+    .hero-bg {
+      background-attachment: scroll;
     }
 
     .hero-bg::before {
