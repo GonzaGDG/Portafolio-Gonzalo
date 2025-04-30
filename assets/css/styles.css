@@ -190,6 +190,7 @@
     object-fit: cover;
     z-index: 0;
     filter: brightness(0.6); /* oscurece un poco para mejorar contraste */
+    transition: transform 0.2s ease-out;
   }
   
   .hero-bg .container {

@@ -110,3 +110,15 @@ track.addEventListener('touchmove', (e) => {
 track.addEventListener('touchend', () => {
   isDragging = false;
 });
+
+function desktopParallax() {
+  const heroImage = document.querySelector('.hero-image');
+  if (!heroImage || window.innerWidth < 768) return;
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    heroImage.style.transform = `translateY(${scrollY * 0.3}px)`; // Ajusta intensidad aquí
+  });
+}
+
+document.addEventListener('DOMContentLoaded', desktopParallax);
