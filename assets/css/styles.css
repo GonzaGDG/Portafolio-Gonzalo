@@ -263,7 +263,7 @@
     text-align: center;
     overflow: hidden;
     transition: transform 0.3s ease;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
     color: #fff;
   }
   
@@ -272,7 +272,7 @@
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.55);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(4px);
     z-index: 1;
   }
   
