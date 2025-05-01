@@ -252,21 +252,32 @@
   
   .portfolio-item {
     position: relative;
-    overflow: hidden;
-    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    min-height: 280px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     text-align: center;
-    color: #fff; /* fuerza texto blanco */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+    color: #fff;
   }
   
+  /* Capa oscurecida + blur */
   .portfolio-item::before {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.55);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(3px);
     z-index: 1;
   }
   
+  /* Texto y botón por encima, sin blur */
   .portfolio-item h3,
   .portfolio-item .btn {
     position: relative;
