@@ -267,7 +267,6 @@
     color: #fff;
   }
   
-  /* Capa oscurecida + blur */
   .portfolio-item::before {
     content: "";
     position: absolute;
@@ -277,9 +276,8 @@
     z-index: 1;
   }
   
-  /* Texto y botón por encima, sin blur */
   .portfolio-item h3,
-  .portoflio-item p,
+  .portfolio-item p,
   .portfolio-item .btn {
     position: relative;
     z-index: 2;
@@ -387,7 +385,7 @@
     }
   
     .portfolio-item h3 {
-      font-size: 1rem;
+      font-size: 1.25rem;
     }
   }
   .contact-intro {
