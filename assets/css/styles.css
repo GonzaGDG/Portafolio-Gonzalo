@@ -279,6 +279,7 @@
   
   /* Texto y botón por encima, sin blur */
   .portfolio-item h3,
+  .portoflio-item p,
   .portfolio-item .btn {
     position: relative;
     z-index: 2;
