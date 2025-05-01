@@ -270,7 +270,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4); /* oscurecer imagen */
+    background: rgba(0, 0, 0, 0.6); /* oscurecer imagen */
     z-index: 1;
   }
   
