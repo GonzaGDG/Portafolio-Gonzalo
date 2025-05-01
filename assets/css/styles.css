@@ -270,16 +270,17 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.6); /* oscurecer imagen */
+    background: rgba(0, 0, 0, 0.6); /* oscurece la imagen */
+    backdrop-filter: blur(4px);      /* añade desenfoque */
     z-index: 1;
   }
   
   .portfolio-item h3,
-  .portfolio-item .btn {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-  }
+.portfolio-item .btn {
+  position: relative;
+  z-index: 2;
+  color: #fff !important;
+}
   
   /* Evita fondo blanco del h3 heredado */
   .portfolio-item h3 {
