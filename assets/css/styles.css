@@ -251,14 +251,29 @@
   }
   
   .portfolio-item {
-    background-color: #f3f3f3;
-    border: 1px solid #e0e0e0;
-    padding: 1rem;
-    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
-    font-size: 0.9rem;
-    transition: transform 0.3s;
+    min-height: 280px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
   }
+
+  .portfolio-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* oscurecer imagen */
+  z-index: 1;
+}
 
   .portfolio-item h3 {
     background-color: #f3f3f3;
@@ -267,6 +282,13 @@
     font-size: 1.2rem;
     transition: transform 0.3s;
   }
+
+  .portfolio-item h3,
+  .portfolio-item .btn {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
   
   .portfolio-item p {
     font-size: 0.9rem;
@@ -339,6 +361,15 @@
     
     .hero-bg::before {
       background-color: rgba(0, 0, 0, 0.3); /* Más transparente en mobile */
+    }
+
+    .portfolio-item {
+      min-height: 300px;
+      padding: 2rem 1rem;
+    }
+  
+    .portfolio-item h3 {
+      font-size: 1.2rem;
     }
   }
   .contact-intro {
@@ -694,8 +725,26 @@
   .gem-pdf-button a:hover {
     background-color: #ff6f61;
   }
+
+  .caso-evalueserve {
+    background-image: url("../img/mockup-evalueserve4.png");
+  }
   
+  .caso-gem {
+    background-image: url("../img/gem-region-portada.jpg");
+  }
+
+  .caso-liderazgo {
+    background-image: url("../img/mockup-liderazgo.png");
+  }
   
+  .caso-granos {
+  background-image: url("../img/granos-slide1.png");
+  }
+
+  .caso-disenoaplicado {
+  background-image: url("../img/emprendimiento-branding.png");
+  }
   
 
  
