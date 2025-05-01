@@ -251,44 +251,55 @@
   }
   
   .portfolio-item {
+    position: relative;
     background-size: cover;
     background-position: center;
-    color: #fff;
-    position: relative;
-    padding: 4rem 2rem;
     border-radius: 12px;
+    min-height: 280px;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     text-align: center;
-    min-height: 280px;
+    overflow: hidden;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
   }
-
+  
   .portfolio-item::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* oscurecer imagen */
-  z-index: 1;
-}
-
-  .portfolio-item h3 {
-    background-color: #f3f3f3;
-    padding: 1rem;
-    text-align: center;
-    font-size: 1.2rem;
-    transition: transform 0.3s;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* oscurecer imagen */
+    z-index: 1;
   }
-
+  
   .portfolio-item h3,
   .portfolio-item .btn {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-}
+    position: relative;
+    z-index: 2;
+    color: #fff;
+  }
+  
+  /* Evita fondo blanco del h3 heredado */
+  .portfolio-item h3 {
+    background: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Ajusta botón */
+  .portfolio-item .btn {
+    width: fit-content;
+    margin: 0 auto;
+    background-color: #007f8b;
+    border: none;
+  }
+  
+  .portfolio-item .btn:hover {
+    background-color: #ff6f61;
+  }
   
   .portfolio-item p {
     font-size: 0.9rem;
@@ -365,11 +376,11 @@
 
     .portfolio-item {
       min-height: 300px;
-      padding: 2rem 1rem;
+      padding: 1.5rem 1rem;
     }
   
     .portfolio-item h3 {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
   .contact-intro {
