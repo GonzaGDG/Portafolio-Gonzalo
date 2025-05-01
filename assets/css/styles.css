@@ -263,7 +263,7 @@
     text-align: center;
     overflow: hidden;
     transition: transform 0.3s ease;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
   }
   
   .portfolio-item::before {
@@ -302,6 +302,7 @@
   }
   
   .portfolio-item p {
+    color: #fff;
     font-size: 0.9rem;
     padding: 0.6rem 1.2rem;
     border-radius: 6px;
@@ -742,7 +743,7 @@
   }
   
   .caso-gem {
-    background-image: url("../img/gem-region-portada.jpg");
+    background-image: url("../img/gem-region-portada.png");
   }
 
   .caso-liderazgo {
