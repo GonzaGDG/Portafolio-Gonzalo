@@ -299,6 +299,7 @@
   
   input,
   textarea {
+    font-family: 'Inter', sans-serif;
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
