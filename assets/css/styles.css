@@ -573,7 +573,7 @@
   flex: 1 1 300px;
   box-sizing: border-box;
   text-align: center;
-  text-justify:distribute;
+  text-justify:center;
   color: #333;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
   }
