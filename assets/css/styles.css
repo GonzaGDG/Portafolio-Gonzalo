@@ -573,6 +573,7 @@
   flex: 1 1 300px;
   box-sizing: border-box;
   text-align: center;
+  align-items: center;
   text-justify:center;
   color: #333;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
@@ -602,6 +603,7 @@
 
   .about-block {
     width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
