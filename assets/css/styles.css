@@ -173,7 +173,7 @@
   
   
   .hero-bg {
-    background: url("../img/hero-background.png") center 80% / cover no-repeat;
+    background: url("../img/hero-background.webp") center 80% / cover no-repeat;
     background-attachment: fixed;
     color: #fff;
     position: relative;
