@@ -128,11 +128,15 @@ document.addEventListener('DOMContentLoaded', desktopParallax);
 document.addEventListener('DOMContentLoaded', function () {
   const projectCards = document.querySelectorAll('.project-card');
 
+  // Asegurarse de que todas las tarjetas tengan la clase 'hidden' al cargar
+  projectCards.forEach(card => card.classList.add('hidden'));
+
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
+        entry.target.classList.remove('hidden');
         entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // animación solo una vez
+        observer.unobserve(entry.target); // Animación solo una vez
       }
     });
   }, {

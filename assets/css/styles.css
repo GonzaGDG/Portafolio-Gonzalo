@@ -831,6 +831,11 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* más profundidad al levantar */
   }
   
+  .project-card.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
   
   .project-card.visible {
     opacity: 1;
