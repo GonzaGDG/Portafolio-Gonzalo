@@ -915,6 +915,7 @@
     .project-card__image {
       width: 100%;
       aspect-ratio: 4 / 3;
+      filter: brightness(1);
       max-width: 100%;
       height: auto;
       display: block;
