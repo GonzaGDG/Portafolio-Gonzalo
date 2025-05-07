@@ -847,6 +847,12 @@
     flex: 0 0 70%;
     aspect-ratio: 18 / 9;
     overflow: hidden;
+    filter: brightness(0.9); /* 10% más oscura */
+    transition: filter 0.3s ease;
+  }
+
+  .project-card__image:hover {
+    filter: brightness(1); /* Recupera brillo original al hacer hover */
   }
   
   .project-card__image img {
