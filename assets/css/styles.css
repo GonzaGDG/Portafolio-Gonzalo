@@ -726,14 +726,19 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 50%;
     border: none;
-    font-size: 2rem;
-    padding: 0.2rem 0.8rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.8rem;
     cursor: pointer;
     z-index: 2;
   } 
+
+  .carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
   
   .carousel-btn.prev {
     left: 10px;
